@@ -1,5 +1,10 @@
+from dotenv import load_dotenv
 import os
 
-BASE_URL = os.environ.get("BASE_URL", "https://burnabytennis.netlify.app")
-BROWSER_NAME = os.environ.get("BROWSER_NAME", "chromium")
-HEADLESS = os.environ.get("HEADLESS", "False")
+load_dotenv()
+
+BASE_URL = os.getenv('BASE_URL', '')
+BROWSER_NAME = os.getenv('BROWSER_NAME', 'chromium')
+HEADLESS = os.getenv('HEADLESS', 'False')
+APP_USER = os.getenv('APP_USERNAME', '')
+APP_PASS = os.getenv('APP_PASSWORD', '')

@@ -1,2 +1,4 @@
 robotframework>=7.0.0
 robotframework-browser
+
+python-dotenv
