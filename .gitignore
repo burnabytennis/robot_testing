@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Robot output
+output.xml
+report.html
+log.html
+
+# Library output
+playwright-log.txt
